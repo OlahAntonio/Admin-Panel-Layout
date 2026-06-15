@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--HEADER-->
+  <nav class="navbar">
+    <div class="nav-sides">
+      <button class="menu-btn">☰</button>
+      <img src="Pictures/WebsiteLogo.png" alt="Website Logo" class="logo">
+    </div>
+
+    <div class="nav-center">
+      <input type="text" placeholder="Search..." />
+    </div>
+
+    <div class="nav-sides">
+      <button class="notification">🔔</button>
+      <img src="Pictures/AccountIcon.png" alt="AccountIcon" class="profile">
+    </div>
+  </nav>
+
+<!--SIDEBAR-->
+  <nav class="displayNav">
+    <button class="navItem">Dashboard</button>
+    <button class="navItem">Articles</button>
+    <button class="navItem">Report</button>
+    <button class="navItem">Institution</button>
+    <button class="navItem">Profile</button>
+    <button class="navItem">Settings</button>
+    <button class="navItem">Logout</button>
+  </nav>
+
+<!--CARDS-->
+  <main>
+    <div class="stats">
+      <div class="card">
+        <div>
+          <h3>60.5k</h3>
+          <p>Article views</p>
+        </div>
+        <span>👁️</span>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>150</h3>
+          <p>Likes</p>
+        </div>
+        <span>👍</span>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>320</h3>
+          <p>Comments</p>
+        </div>
+        <span>💬</span>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>70</h3>
+          <p>Status</p>
+        </div>
+        <span>✅</span>
+      </div>
+    </div>
+
+<!--TABLE-->
+    <section class="activityTable">
+      <header class="preTableHdr">
+        <span class="tableHdrElement">Recent activity</span>
+        <span class="tableHdrElement">View all</span>
+      </header>
+      <hr>
+      <div class="tableHeader tableGrid">
+        <span>Article</span>
+        <span>Views</span>
+        <span>Comments</span>
+        <span>Status</span>
+      </div>
+
+      <div class="tableRow tableGrid">
+        <span>Article73</span>
+        <span>125</span>
+        <span>12</span>
+        <span class="statusBtn">Published</span>
+      </div>
+
+      <div class="tableRow tableGrid">
+        <span>Article18</span>
+        <span>342</span>
+        <span>28</span>
+        <span class="statusBtn">Published</span>
+      </div>
+
+      <div class="tableRow tableGrid">
+        <span>Article91</span>
+        <span>876</span>
+        <span>54</span>
+        <span class="statusBtn">Deleted</span>
+      </div>
+    </section>
+  </main>
+
+<!--FOOTER-->
+  <footer>
+    <h2>Admin Panel Example</h2>
+    <span>@Copyright Olah Antonio</span>
+    <hr>
+    <span>All rights reserved</span>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

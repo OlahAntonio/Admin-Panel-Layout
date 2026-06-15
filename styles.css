@@ -1,0 +1,257 @@
+* {
+  font-family: 'Inter', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f7fb;
+  color: #111827;
+}
+
+main {
+  padding: 32px;
+}
+
+/*HEADER*/
+.navbar {
+  height: 100px;
+  background: #ffffff;
+  border-radius: 0 0 24px 24px;
+  padding: 20px 32px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-sides {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu-btn,
+.notification {
+  background: #eef2ff;
+  color: #4338ca;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.menu-btn:hover,
+.notification:hover {
+  background: #e0e7ff;
+  transform: translateY(-2px);
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+.profile {
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.nav-center input {
+  width: 100%;
+  padding: 14px 18px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  outline: none;
+  font-size: 15px;
+  color: #111827;
+}
+
+.nav-center input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.14);
+}
+
+/*SIDEBAR*/
+.displayNav {
+  position: fixed;
+  top: 125px;
+  left: -240px;
+  width: 220px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  border-radius: 0 20px 20px 0;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.14);
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.displayNav.active {
+  left: 0;
+}
+
+.navItem {
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #312e81, #4f46e5);
+  color: white;
+  padding: 16px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.25s ease;
+}
+
+.navItem:hover {
+  transform: translateX(6px);
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.32);
+}
+
+/*CARDS*/
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: linear-gradient(135deg, #1e1b4b, #4f46e5);
+  color: white;
+  border-radius: 20px;
+  padding: 24px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 14px 28px rgba(79, 70, 229, 0.22);
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.card p {
+  margin: 8px 0 0;
+  font-size: 15px;
+  color: #c7d2fe;
+}
+
+.card span {
+  font-size: 35px;
+}
+
+/*TABLE*/
+.activityTable {
+  width: 95%;
+  height: auto;
+  margin: 40px 0;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.preTableHdr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tableHdrElement {
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: #4f46e5;
+}
+
+.tableGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  height: 70px;
+}
+
+.tableGrid > span {
+  text-align: center;
+  font-weight: 700;
+}
+
+.tableHeader {
+  color: #64748b;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tableRow {
+  border-bottom: 1px solid #edf2f7;
+}
+
+.tableRow:hover {
+  background: #f8faff;
+  border-radius: 12px;
+}
+
+.statusBtn {
+  justify-self: center;
+  min-width: 120px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 999px;
+  color: white;
+  text-align: center;
+}
+
+.published {
+  background: #15803d;
+}
+
+.deleted {
+  background: #b91c1c;
+}
+
+/* FOOTER */
+footer {
+  margin: 40px 32px 24px;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  text-align: center;
+}
+
+footer h2 {
+  margin: 0 0 10px;
+  color: #4f46e5;
+}
+
+footer span {
+  display: block;
+  color: #64748b;
+  margin: 8px 0;
+}
+
+footer hr {
+  width: 60%;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
